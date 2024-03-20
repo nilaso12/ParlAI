@@ -1,0 +1,20 @@
+Website Requirements
+Content Management: It is probably vital to have a CMS (content management system) so that you can always update and maintain the different sections of the website like tutorials, projects and support.
+User Interaction: Users could communicate by leaving comments, talking in forums, or asking for feedback.
+High Availability: The site should be able to withstand the load of a high traffic spike and guarantee the availability.
+Security: Security measures are the basis for ensuring protection of user data from any unauthorized access.
+Scalability: The architecture should be adaptable to the situation when the traffic or data volume grows.
+Performance: A site that quickly loads is the norm for a good user experience.
+Monitoring and Analytics: Tracking tools are a must to ensure that targets and user behaviour are monitored.
+Cloud Provider and Services
+In terms of requirement and the scalability issues, a major cloud provider platform such as Amazon AWS, Google Cloud Platform (GCP), or Azure will be better. In this scenario, we will select AWS as a cloud provider.
+Architecture Design
+Based on the requirements, we will design the architecture as follows:Based on the requirements, we will design the architecture as follows:
+Web Servers: Establish web servers (for instance, EC2 instances) to provide the website hosting.
+Load Balancer: ELB can help to distribute the incoming traffic among multiple EC2 instances to achieve high availability and scalability.
+Database: Deploy Amazon RDS to host MySQL or PostgreSQL to accommodate your website data.
+Caching: Use Amazon ElastiCache (Redis) to cache the most often-used data, and then boost your website speed.
+Content Delivery: Use the Amazon CloudFront to cache and provide static assets like images, JS, and CSS files to users globally for better performance.
+Security: Integrate AWS Web Application Firewall (WAF) in order to defend against common web vulnerabilities and distributed denial of service (DDoS) attacks.
+
+
